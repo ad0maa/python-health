@@ -75,3 +75,23 @@ STRAVA_CLIENT_SECRET=your-secret
 - External API integrations for food and fitness data
 - Background sync tasks for fitness platforms
 - Recipe suggestions based on macro targets
+
+## Development Session Rules
+**On each new Claude Code session:**
+1. Read CLAUDE.md and PROJECT_PLAN.md first
+2. Check git status to understand recent work
+3. Focus on next unchecked item in Phase 1
+
+**When completing tasks:**
+1. Implement the feature/endpoint completely (or use TDD approach)
+2. Write comprehensive tests for the feature
+3. Run tests to ensure they pass (`pytest`)
+4. Test functionality manually (run server, check /docs endpoint)
+5. Update PROJECT_PLAN.md to tick the completed checkbox
+6. Create git commit with descriptive message
+7. Move to next logical task
+
+**Session boundaries:**
+- Focus on 1-3 related checklist items per session
+- Always commit completed work before ending
+- Use clear commit messages for next session context
