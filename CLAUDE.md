@@ -93,6 +93,7 @@ STRAVA_CLIENT_SECRET=your-secret
   - Key features implemented
   - Test coverage added
   - Any breaking changes or considerations
+- **Important**: Do NOT include Claude credits or generation notices in commit messages or PR descriptions
 
 ## Development Session Rules
 **On each new Claude Code session:**

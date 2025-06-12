@@ -32,6 +32,10 @@ class UserUpdate(BaseModel):
     dietary_restrictions: Optional[str] = None
     allergies: Optional[str] = None
     preferred_cuisines: Optional[str] = None
+    daily_calories_target: Optional[int] = None
+    daily_protein_target: Optional[float] = None
+    daily_carbs_target: Optional[float] = None
+    daily_fat_target: Optional[float] = None
 
 class UserGoals(BaseModel):
     daily_calories_target: Optional[int] = None

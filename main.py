@@ -22,9 +22,11 @@ app.add_middleware(
 # Include API router
 app.include_router(api_router, prefix="/api/v1")
 
+
 @app.get("/")
 async def root():
     return {"message": "Health Tracker API", "version": settings.APP_VERSION}
+
 
 @app.get("/health")
 async def health_check():
