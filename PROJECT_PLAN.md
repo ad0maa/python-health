@@ -30,7 +30,7 @@ A comprehensive health and fitness tracking application built with FastAPI that 
 - [x] JWT authentication system setup
 - [ ] **Complete all API endpoint implementations**
   - [x] Authentication endpoints (register, login, refresh)
-  - [ ] User management endpoints (profile, goals, preferences)
+  - [x] User management endpoints (profile, goals, preferences) - [PR #1](https://github.com/ad0maa/python-health/pull/1)
   - [ ] Nutrition endpoints (food search, meal logging, daily summary)
   - [ ] Recipe endpoints (search, create, suggestions)
   - [ ] Activity endpoints (sync, history, analytics)
@@ -174,6 +174,11 @@ A comprehensive health and fitness tracking application built with FastAPI that 
 - `GET /activities` - Get activity history
 - `POST /integrations/sync` - Sync external data
 - `GET /analytics/progress` - Get progress analytics
+
+## 📝 Pull Request History
+
+### Phase 1 - Backend Development
+- **PR #1**: [User Management Endpoints](https://github.com/ad0maa/python-health/pull/1) - Implemented GET/PUT /users/me and POST /users/goals with comprehensive testing
 
 ## 🚀 Getting Started
 
