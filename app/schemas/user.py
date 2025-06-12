@@ -1,10 +1,10 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 from app.models.user import ActivityLevel, Goal
 
 class UserBase(BaseModel):
-    email: EmailStr
+    email: str
     username: str
     first_name: Optional[str] = None
     last_name: Optional[str] = None

@@ -55,8 +55,8 @@ class User(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
     
-    # Relationships
-    meals = relationship("Meal", back_populates="user")
-    recipes = relationship("Recipe", back_populates="user")
-    activities = relationship("Activity", back_populates="user")
-    user_integrations = relationship("UserIntegration", back_populates="user")
+    # Relationships (will add back when other models are ready)
+    # meals = relationship("Meal", back_populates="user")
+    # recipes = relationship("Recipe", back_populates="user")
+    # activities = relationship("Activity", back_populates="user")
+    # user_integrations = relationship("UserIntegration", back_populates="user")

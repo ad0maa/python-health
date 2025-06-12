@@ -29,7 +29,7 @@ A comprehensive health and fitness tracking application built with FastAPI that 
 - [x] Database models (Users, Foods, Meals, Recipes, Activities)
 - [x] JWT authentication system setup
 - [ ] **Complete all API endpoint implementations**
-  - [ ] Authentication endpoints (register, login, refresh)
+  - [x] Authentication endpoints (register, login, refresh)
   - [ ] User management endpoints (profile, goals, preferences)
   - [ ] Nutrition endpoints (food search, meal logging, daily summary)
   - [ ] Recipe endpoints (search, create, suggestions)
