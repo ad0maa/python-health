@@ -76,6 +76,24 @@ STRAVA_CLIENT_SECRET=your-secret
 - Background sync tasks for fitness platforms
 - Recipe suggestions based on macro targets
 
+## Git & GitHub Workflow
+**Feature Branch Development:**
+1. Create a new feature branch for each feature: `git checkout -b feature/feature-name`
+2. Work on the feature implementation and tests
+3. Run all tests to ensure they pass (`pytest`)
+4. Commit changes with descriptive messages
+5. Push feature branch to GitHub: `git push -u origin feature/feature-name`
+6. Create Pull Request with comprehensive description of changes
+7. Wait for PR approval before merging
+
+**Pull Request Guidelines:**
+- **Title**: Clear, concise description of the feature/change
+- **Description**: Include:
+  - Summary of changes made
+  - Key features implemented
+  - Test coverage added
+  - Any breaking changes or considerations
+
 ## Development Session Rules
 **On each new Claude Code session:**
 1. Read CLAUDE.md and PROJECT_PLAN.md first
@@ -83,15 +101,16 @@ STRAVA_CLIENT_SECRET=your-secret
 3. Focus on next unchecked item in Phase 1
 
 **When completing tasks:**
-1. Implement the feature/endpoint completely (or use TDD approach)
-2. Write comprehensive tests for the feature
-3. Run tests to ensure they pass (`pytest`)
-4. Test functionality manually (run server, check /docs endpoint)
-5. Update PROJECT_PLAN.md to tick the completed checkbox
-6. Create git commit with descriptive message
-7. Move to next logical task
+1. Create feature branch for the task
+2. Implement the feature/endpoint completely (or use TDD approach)
+3. Write comprehensive tests for the feature
+4. Run tests to ensure they pass (`pytest`)
+5. Test functionality manually (run server, check /docs endpoint)
+6. Update PROJECT_PLAN.md to tick the completed checkbox
+7. Commit changes and create PR for review
+8. Move to next logical task after PR approval
 
 **Session boundaries:**
 - Focus on 1-3 related checklist items per session
-- Always commit completed work before ending
-- Use clear commit messages for next session context
+- Always create PR for completed work before ending
+- Use clear commit messages and PR descriptions for context
